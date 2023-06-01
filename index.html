@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .bg-anime {
+        background-color: burlywood;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        margin: auto;
+        animation-name: back;
+        animation-duration: 20s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-iteration-count: infinite;
+      }
+
+      /* @keyframes back {
+      from{
+        background-color: coral;
+      }
+      to{
+        background-color: darkkhaki;
+        transform: translate(100px);
+        transform: translate(-100px);
+      }
+    }*/
+
+      @keyframes back {
+        0% {
+          transform: translate();
+        }
+        50% {
+          border-radius: 50%;
+          transform: translate(200px);
+        }
+        100% {
+          transform: translate(-200px);
+          border-radius: 50%;
+        }
+      }
+
+      .yde {
+        width: 150px;
+        height: 150px;
+        background-color: darkblue;
+        margin: auto;
+        animation-name: yde;
+        animation-duration: 20s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+      }
+      @keyframes yde {
+        0% {
+          background-color: darkblue;
+        }
+
+        50% {
+          background-color: brown;
+          transform: scale(2);
+          transform: translate(-200px);
+        }
+        100% {
+          border-radius: 50%;
+          background-color: coral;
+          transform: rotate(180deg);
+          transform: translateX(200px);
+        }
+      }
+
+      .outer {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(114, 29, 46);
+        margin: auto;
+        display: flex;
+      }
+      .inner {
+        background-color: gray;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        animation: travel 5s infinite alternate-reverse forwards;
+      }
+
+      @keyframes travel {
+        0% {
+        }
+        25% {
+          transform: translate(250px);
+        }
+        50% {
+          transform: translate(250px, 250px);
+        }
+        75% {
+          transform: translate(0px, 250px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+      .shake-anime {
+        text-align: center;
+        & i {
+          color: gold;
+          font-size: 10rem;
+          &:hover {
+            animation: shake 0.8s infinite ease-in-out;
+          }
+        }
+      }
+      @keyframes shake {
+        0% {
+          transform: rotate(15deg);
+        }
+        50% {
+          transform: rotate(-15deg);
+        }
+        100% {
+          transform: rotate(15deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>from to kullanımı</h2>
+    <div class="bg-anime"></div>
+    <hr />
+    <h2>%kullanimi</h2>
+    <div class="yde"></div>
+
+    <hr />
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+    <hr />
+    <div class="shake-anime">
+      <h1>SHAKE ANIMATION</h1>
+      <i class="fa-solid fa-bell" onclick="cal()"></i>
+
+      <audio src="./despacito.mp3"></audio>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="./app.js"></script>
+  </body>
+</html>
