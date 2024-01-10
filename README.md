@@ -16,9 +16,8 @@ The project aims to create an animated page using CSS animation, transform, tran
 ```
 Animation Example((folder)
 |
-|----assets
-|----index.html
-|----basketball.html
+|---- index.html
+|---- app.js
 |----readme.md
 
 
