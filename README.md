@@ -1,8 +1,8 @@
-## Project-007 : Animation Example
+## Project-008 : Animation Example
 
 [Click Me !](https://kaplanh.github.io/animation/)
 
-![animation](https://github.com/kaplanh/text-btn-foto--animation/assets/101884444/b33676a2-ca16-4f48-a06c-a1ee8f59cfb2)
+![animation example](https://github.com/kaplanh/animation/assets/101884444/4fc2ada3-2998-4088-bea9-d041d48630b3)
 
 
 
